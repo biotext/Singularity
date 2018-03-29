@@ -25,14 +25,6 @@ apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb 
 locale-gen en_US.UTF-8
 apt-get clean
 
-wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/bin/dssp
-chmod a+x /usr/local/bin/dssp
-
-wget ftp://ftp.icgeb.trieste.it/pub/CX/CX.c.gz -O /usr/local/bin/CX.c.gz
-gunzip /usr/local/bin/CX.c.gz
-gcc -o /usr/local/bin/cx /usr/local/bin/CX.c -lm
-rm /usr/local/bin/CX.c
-
 pip install --upgrade pip
 pip install tensorflow-gpu==1.4.0
 pip install keras==2.0.8
@@ -41,13 +33,7 @@ pip install h5py
 pip install mayavi
 pip install --upgrade notebook
 pip install cython
-pip install Biopython
-
-wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
-tar -xzf freesasa-2.0.2.tar.gz
-cd freesasa-2.0.2
-./configure CFLAGS=-fPIC --enable-python-bindings --disable-json --disable-xml
-make && make install
+pip install biopython
 
 ###
 ### destination for NIH HPC bind mounts
