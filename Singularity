@@ -11,7 +11,6 @@ VERSION v3
 %environment
 ################################################################################
 export PATH=/usr/local/sbin:/usr/sbin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
-export PYTHONPATH=/usr/share/pdb2pqr:
 
 ################################################################################
 %post
@@ -21,7 +20,7 @@ export PYTHONPATH=/usr/share/pdb2pqr:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb python-vtk pdb2pqr python-pandas
+apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb python-vtk python-pandas
 locale-gen en_US.UTF-8
 apt-get clean
 
