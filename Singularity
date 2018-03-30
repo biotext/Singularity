@@ -24,11 +24,11 @@ apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip python3-
 locale-gen en_US.UTF-8
 apt-get clean
 
-pip install --upgrade pip
-pip install tensorflow-gpu==1.6.0
-pip install keras==2.1.5
-pip install Pillow scikit-learn pandas matplotlib==2.2.2 notebook ipython
-pip install h5py
+pip3 install --upgrade pip
+pip3 install tensorflow-gpu==1.6.0
+pip3 install keras==2.1.5
+pip3 install setuptools wheel Pillow scikit-learn pandas matplotlib==2.2.2 notebook ipython
+pip3 install h5py
 
 ###
 ### destination for NIH HPC bind mounts
