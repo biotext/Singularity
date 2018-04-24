@@ -34,4 +34,3 @@ pip3 install h5py
 ### destination for NIH HPC bind mounts
 ###
 mkdir /gpfs /spin1 /gs3 /gs4 /gs5 /gs6 /gs7 /gs8 /gs11 /data /scratch /fdb /lscratch
-
