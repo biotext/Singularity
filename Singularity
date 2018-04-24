@@ -25,7 +25,7 @@ locale-gen en_US.UTF-8
 apt-get clean
 
 pip3 install --upgrade pip
-pip3 install --upgrade tensorflow-gpu==1.6.0
+pip install tensorflow-gpu==1.6.0
 
 ###
 ### destination for NIH HPC bind mounts
