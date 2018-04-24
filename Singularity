@@ -24,7 +24,7 @@ apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip python3-
 locale-gen en_US.UTF-8
 apt-get clean
 
-pip3 install --upgrade pip
+pip install --upgrade pip
 pip install tensorflow-gpu==1.6.0
 
 ###
