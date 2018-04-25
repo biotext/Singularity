@@ -4,6 +4,13 @@
 
 set -e
 
+function usage() {
+    grep '^#U ' "${BASH_SOURCE[0]}" \
+        | cut -c4- \
+        | groff -Tascii -man \
+        | less -e
+}
+
 keras_img="${PWD}/biotext-Singularity-master-latest.simg"
 keras_backend="tensorflow"
 cmd="help"
@@ -31,6 +38,7 @@ while true; do
             break 
             ;;
         *)
+            usage
             exit 1
             ;;
     esac
