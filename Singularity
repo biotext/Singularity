@@ -25,7 +25,7 @@ locale-gen en_US.UTF-8
 apt-get clean
 
 pip3 install --upgrade pip
-pip install tensorflow-gpu==1.8.0
+pip install tensorflow-gpu==1.7.0
 pip install keras==2.1.6
 pip install setuptools wheel Pillow scikit-learn pandas matplotlib==2.2.2 notebook ipython tqdm
 pip install h5py
