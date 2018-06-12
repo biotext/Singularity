@@ -30,6 +30,7 @@ pip install tensorflow-gpu==1.6.0
 pip install keras==2.1.5
 pip install setuptools wheel Pillow scikit-learn pandas matplotlib==2.2.2 notebook ipython tqdm
 pip install h5py
+pip install gensim
 
 ###
 ### destination for NIH HPC bind mounts
