@@ -20,6 +20,7 @@ export PATH=/usr/local/sbin:/usr/sbin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/lo
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
+apt-get install -y --no-install-recommends apt-utils
 apt-get install -y libhdf5-dev graphviz locales python3-dev python3-pip python3-tk
 apt-get install -y --allow-downgrades libcudnn7=7.0.5.15-1+cuda9.0
 locale-gen en_US.UTF-8
